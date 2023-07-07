@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ZjSEKCunqta4uAzrZ");
+        })();
+    </script>
 </head>
 
 <body>
@@ -169,47 +178,47 @@
         <div class="services-content">
             <!-- Box 1 -->
             <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
+                <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <a href="#">Learn More</a>
             </div>
             <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
+                <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <a href="#">Learn More</a>
             </div>
             <!-- Box 2 -->
             <div class="services-box">
-                <i class='bx bx-server' ></i>
+                <i class='bx bx-server'></i>
                 <h3>Backend Development</h3>
                 <a href="#">Learn More</a>
             </div>
             <div class="services-box">
-                <i class='bx bx-server' ></i>
+                <i class='bx bx-server'></i>
                 <h3>Backend Development</h3>
                 <a href="#">Learn More</a>
             </div>
             <!-- Box 3 -->
             <div class="services-box">
-                <i class='bx bx-laptop' ></i>
+                <i class='bx bx-laptop'></i>
                 <h3>Frontend Development</h3>
                 <a href="#">Learn More</a>
             </div>
             <div class="services-box">
-                <i class='bx bx-laptop' ></i>
+                <i class='bx bx-laptop'></i>
                 <h3>Frontend Development</h3>
                 <a href="#">Learn More</a>
             </div>
 
             <div class="services-box">
-                <i class='bx bx-brush' ></i>
+                <i class='bx bx-brush'></i>
                 <h3>UI/UX Design</h3>
                 <a href="#">Learn More</a>
             </div>
         </div>
     </section>
-     <!-- Portfolio -->
-     <section class="portfolio" id="portfolio">
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
         <div class="heading">
             <h2>Portfolio</h2>
             <span>My Recent Works</span>
@@ -219,13 +228,15 @@
                 <a href="https://schoolsoft-beige.vercel.app/"><img src="./Assets/images/p6.png" alt=""></a>
             </div>
             <div class="portfolio-img">
-                <a href="https://clementnjeru.github.io/Moringaschool-Week1-Project/"><img src="./Assets/images/p1.png" alt=""></a>
+                <a href="https://clementnjeru.github.io/Moringaschool-Week1-Project/"><img src="./Assets/images/p1.png"
+                        alt=""></a>
             </div>
             <div class="portfolio-img">
-                <a href="https://clementnjeru.github.io/Week-2-Independent-Project/"><img src="./Assets/images/p2.png" alt=""></a>
+                <a href="https://clementnjeru.github.io/Week-2-Independent-Project/"><img src="./Assets/images/p2.png"
+                        alt=""></a>
             </div>
             <div class="portfolio-img">
-                 <a href=" https://hobby-space.netlify.app/"><img src="./Assets/images/p3.png" alt=""></a>
+                <a href=" https://hobby-space.netlify.app/"><img src="./Assets/images/p3.png" alt=""></a>
             </div>
             <div class="portfolio-img">
                 <a href=" https://clementnjeru.github.io/Yummy_Recipes/"> <img src="./Assets/images/p4.png" alt=""></a>
@@ -235,6 +246,22 @@
             </div>
         </div>
     </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form action="" id="myForm">
+                <input type="text" id="fullName" placeholder="Your Name">
+                <input type="email" name="" id="email_id" placeholder="Your Email">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input onclick="SendMail()" type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+
 
 </body>
 <script src="./script.js"></script>

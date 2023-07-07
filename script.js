@@ -27,3 +27,17 @@
             document.body.classList.remove('active');
         }
     }
+
+    // emailjs
+    function SendMail() {
+        const params = {
+            from_name : document.getElementById("fullName").value,
+            email_id : document.getElementById("email_id").value,
+            message : document.getElementById("message").value,
+        }
+        emailjs.send("service_bbobasu", "template_4lckrdb", params).then(function (res) {
+            alert("Email Sent Successfully!" + res.status);
+            document.getElementById("myForm").reset();
+        })
+    
+    }
